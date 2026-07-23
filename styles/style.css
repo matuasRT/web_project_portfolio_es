@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  padding-right: 120px;
 }
 
 .body {
@@ -8,8 +9,8 @@
 }
 
 .hero-text {
-  margin-left: 120px;
-  margin-top: 89px;
+  padding-left: 120px;
+  padding-top: 89px;
 }
 
 .hero-title {
@@ -55,18 +56,17 @@
 }
 
 .hero-image {
-  margin-top: 40px;
-  margin-right: 120px;
+  padding-top: 40px;
   width: 387px;
   height: 500px;
 }
 
 .skills {
-  margin-left: 120px;
+  margin-top: 100px;
+  padding-left: 120px;
 }
 
 .skills-title {
-  margin-top: 100px;
   margin-bottom: 50px;
   font-family: "Archivo Black", sans-serif;
   font-size: 40px;
@@ -81,7 +81,7 @@
 }
 
 .projects-title {
-  margin-left: 120px;
+  padding-left: 120px;
   margin-top: 100px;
   margin-bottom: 50px;
   font-family: "Archivo Black", sans-serif;
@@ -164,9 +164,13 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-right: 40px;
+  }
+
   .hero-text {
-    margin-left: 40px;
-    margin-top: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
   }
 
   .hero-title {
@@ -185,8 +189,6 @@
   .hero-image {
     width: 216px;
     height: 280px;
-    margin-top: 40px;
-    margin-right: 40px;
   }
 
   .hero-image img {
@@ -197,7 +199,11 @@
 
   .skills {
     margin-top: 80px;
-    margin-left: 40px;
+    padding-left: 40px;
+  }
+
+  .skills-title {
+    margin-bottom: 40px;
   }
 
   .skills-icons {
@@ -205,7 +211,7 @@
   }
 
   .projects-title {
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .projects-grid {
@@ -234,13 +240,98 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    margin-top: 30px;
+    padding-top: 0;
   }
 
   .hero-image {
     order: -1;
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
     height: auto;
-    margin: 40px auto 0 auto;
+    padding-top: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .role {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .link {
+    width: fit-content;
+  }
+
+  .skills {
+    margin-top: 60px;
+    padding-left: 20px;
+  }
+
+  .skills-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .skills-icons {
+    gap: 53px;
+  }
+
+  .skills-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .projects-title {
+    padding-left: 20px;
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .projects-grid {
+    gap: 10px;
+  }
+
+  .project-card {
+    max-width: 280px;
+  }
+
+  .project-name {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .project-description {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 240px;
+  }
+
+  .contact {
+    margin-top: 60px;
+  }
+
+  .contact-icons {
+    gap: 40px;
   }
 }
