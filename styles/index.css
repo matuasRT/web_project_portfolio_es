@@ -163,7 +163,7 @@
   margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1205px) {
   .hero {
     padding-right: 40px;
   }
@@ -235,7 +235,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 690px) {
   .hero {
     flex-direction: column;
     align-items: center;
